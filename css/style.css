@@ -26,6 +26,7 @@ body{
   padding: 1rem 2rem;
   z-index: 1;
   
+  
 }
 
 .header a {
@@ -121,6 +122,7 @@ body{
 /* hero section  */
 .hero-section{
   background:#fff;
+  /* padding-top: 32px; */
   height: 80vh;
   border-radius:  0% 0% 0% 15%;
   
@@ -175,10 +177,12 @@ body{
     transform: translateX(100vw);
     background-color: #6070ff;
     transition: transform 0.3s ease-in-out;
+    
   }
 
   .menu-items.open {
     transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
   }
 
   .menu-items li {
