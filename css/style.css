@@ -48,18 +48,18 @@ body{
   color : #344563;
   font-weight: 500;
   line-height: 20px;
- 
+  transition: background 0.3s ease-in-out;
 
 }
 
 .menu-items li a:hover{
-  border-bottom: 0.5px solid #6070ff;
+  border-bottom: 0.5px solid #4e5eee;
 }
 
 /* nav menu button  */
 .menu-btn {
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 1.5rem;
@@ -97,10 +97,13 @@ body{
 }
 .menu-btn.open .menu-btn__lines::before{
   transform: rotate(45deg) translate(-1.5rem,1.5rem);
+  background-color: #fff;
 }
 
 .menu-btn.open .menu-btn__lines::after{
   transform: rotate(-45deg) translate(-1.5rem,-1.5rem);
+  background-color: #fff;
+
 }
 
 
@@ -155,5 +158,46 @@ body{
 @media (max-width:767px){
   .header a{
     font-size: 1 rem;
+  }
+
+  .menu-btn { 
+    display: flex;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(100vw);
+    background-color: #6070ff;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu-items.open {
+    transform: translateX(0);
+  }
+
+  .menu-items li {
+    width: 100vw;
+    height: 100%;
+
+  }
+
+  .menu-items li a {
+    color: #fff;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-items li a:hover {
+    background: #4e5eee;
   }
 }
