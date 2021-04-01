@@ -1,0 +1,159 @@
+/* globals */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #E5E5E5;
+
+}
+
+/* header  */
+.header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1;
+  
+}
+
+.header a {
+  text-decoration: none;
+  color: #6070ff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items li a {
+  font-size: 15px;
+  padding: 0.5em 1em;
+  color : #344563;
+  font-weight: 500;
+  line-height: 20px;
+ 
+
+}
+
+.menu-items li a:hover{
+  border-bottom: 0.5px solid #6070ff;
+}
+
+/* nav menu button  */
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-btn__lines,
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: #111111;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  content: " ";
+  position: absolute;
+}
+
+.menu-btn__lines::before {
+  transform:  translateY(-0.5rem);
+}
+.menu-btn__lines::after {
+  transform:  translateY(0.5rem);
+}
+
+/* animations  */
+.menu-btn.open .menu-btn__lines{
+  transform: translateX(2rem);
+  background-color: transparent;
+}
+.menu-btn.open .menu-btn__lines::before{
+  transform: rotate(45deg) translate(-1.5rem,1.5rem);
+}
+
+.menu-btn.open .menu-btn__lines::after{
+  transform: rotate(-45deg) translate(-1.5rem,-1.5rem);
+}
+
+
+
+/* sections */
+
+.section{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+/* hero section  */
+.hero-section{
+  background:#fff;
+  height: 80vh;
+  border-radius:  0% 0% 0% 15%;
+  
+}
+
+.hero-col{
+  padding: clamp(1rem, 8vw, 5rem);
+  max-width: 50%;
+
+}
+
+.section p {
+  padding-right: 1rem;
+  text-align: justify;;
+}
+
+
+/* another section  */
+.another-col{
+  width: clamp(300px, 50vw, 600px);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width : 1023px){
+  .hero-col{
+    max-width: 100%;
+    width: clamp(300px,70vw,600px);
+    padding: 0;
+  }
+}
+
+/* mobile devices */
+
+@media (max-width:767px){
+  .header a{
+    font-size: 1 rem;
+  }
+}
