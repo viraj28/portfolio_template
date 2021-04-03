@@ -303,3 +303,9 @@ body{
     background: #4e5eee;
   }
 }
+
+
+.card-custom{
+  background-color: #fff;
+  border-radius: 12px;
+}
