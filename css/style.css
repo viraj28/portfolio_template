@@ -308,4 +308,5 @@ body{
 .card-custom{
   background-color: #fff;
   border-radius: 12px;
+  margin: 8rem auto !important;
 }
