@@ -160,7 +160,8 @@
   <section id="about">
 
     <div class="container ">
-      <div class="col-md-6" style="padding-top:8rem;">
+      <div class="row" style="padding-top:8rem; padding-bottom: 8rem;">
+      <div class="col-md-6" >
         <div class="card-body ">
           <h2 class="card-title font-weight-bold ">About <br>
             Myself</h2>
@@ -199,8 +200,91 @@
           <button type="button" class="btn btn-outline-primary mt-4">Get my resume</button>
         </div>
       </div>
-      <div class="col-md-6">
 
+      <!-- Second column  -->
+      <div class="col-md-6">
+          <div class="accordion " id="accEg">
+
+            <!-- First Collapse  -->
+            <div class="card  border-light">
+              <div class="card-header bg-light" id="languages">
+                <div class="row">
+                  <div class="col-11">
+                    <button class="btn btn-link btn-block text-left text-dark" type="button" data-toggle="collapse" data-target="#languageCollapse" aria-expanded="true" aria-controls="languageCollapse">
+                      Languages 
+                    </button>
+                  </div>
+                  <div class="col-1" style="align-items: center;">
+                    <i class="bi bi-chevron-down "></i>
+                  </div>
+                </div>
+                  
+                  
+                
+              </div>
+
+              <div id="languageCollapse" class="collapse show" aria-labelledby="languages" data-parent="#accEg">
+                <div class="card-body">
+                  <img src="/res/JS.png" alt="" class="p-1">
+                  <img src="/res/html.png" alt="" class="p-1">
+                  <img src="/res/css.png" alt="" class="p-1">
+                </div>
+                 
+                
+              </div>
+            </div>
+
+            <!-- Second Collapse  -->
+            <div class="card border-light">
+              <div class="card-header bg-light" id="frameworks">
+                
+                  <div class="row">
+                    <div class="col-11">
+                      <button class="btn btn-link btn-block text-left text-dark Collapsed" type="button" data-toggle="collapse" data-target="#frameCollapse" aria-expanded="true" aria-controls="frameCollapse">
+                        Frameworks
+                      </button>
+                    </div>
+                    <div class="col-1" style="align-items: center;">
+                      <i class="bi bi-chevron-right "></i>
+                    </div>
+                  </div>
+                  
+                  
+                
+              </div>
+
+              <div id="frameCollapse" class="collapse " aria-labelledby="frameworks" data-parent="#accEg">
+                <div class="card-body">
+                  Bootstrap, React, Angular
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Collapse  -->
+            <div class="card border-light">
+              <div class="card-header bg-light" id="skills">
+                <div class="row">
+                  <div class="col-11">
+                    <button class="btn btn-link btn-block text-left text-dark Collapsed" type="button" data-toggle="collapse" data-target="#skillCollapse" aria-expanded="true" aria-controls="skillCollapse">
+                      Skills
+                    </button>
+                  </div>
+                  <div class="col-1" style="align-items: center;">
+                    <i class="bi bi-chevron-right "></i>
+                  </div>
+                </div>
+                  
+                  
+                
+              </div>
+
+              <div id="skillCollapse" class="collapse " aria-labelledby="skills" data-parent="#accEg">
+                <div class="card-body">
+                  Programming, Analysis, Communication.
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
 
