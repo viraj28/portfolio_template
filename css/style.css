@@ -310,3 +310,9 @@ body{
   border-radius: 12px;
   margin: 8rem auto !important;
 }
+
+
+#about{
+  background-color: #fff;
+  border-radius:  0% 120px 0% 0%;
+}
