@@ -134,7 +134,6 @@ body {
 
 /* another section  */
 
-
 .no-decoration-link {
   text-decoration: none;
 }
@@ -162,8 +161,8 @@ body {
 .lang-font {
   font-size: 14px;
 }
-/* MEDIA QUERIES */
 
+/* MEDIA QUERIES */
 
 @media (max-width: 1023px) {
   .hero-col {
