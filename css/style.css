@@ -215,6 +215,17 @@ body {
   color: #6070ff;
 }
 
+.max-height-lang {
+  max-height: 50px;
+}
+
+.width23 {
+  width: 26%;
+}
+
+.lang-font {
+  font-size: 14px;
+}
 /* MEDIA QUERIES */
 
 /* Cards */
@@ -247,6 +258,10 @@ body {
     max-width: 100%;
     width: clamp(300px, 70vw, 600px);
     padding: 0;
+  }
+
+  .width23 {
+    width: 35%;
   }
 }
 
