@@ -316,3 +316,13 @@ body{
   background-color: #fff;
   border-radius:  0% 120px 0% 0%;
 }
+
+#contact{
+  
+  background: #6070FF;
+  border-radius: 120px 0 0 0 ;
+}
+
+#contact::before{
+  background-color: #fff;
+}
