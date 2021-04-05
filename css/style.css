@@ -134,7 +134,6 @@ body {
 
 /* another section  */
 
-
 .no-decoration-link {
   text-decoration: none;
 }
@@ -151,14 +150,29 @@ body {
   color: #6070ff;
 }
 
-/* MEDIA QUERIES */
+.max-height-lang {
+  max-height: 50px;
+}
 
+.width23 {
+  width: 26%;
+}
+
+.lang-font {
+  font-size: 14px;
+}
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1023px) {
   .hero-col {
     max-width: 100%;
     width: clamp(300px, 70vw, 600px);
     padding: 0;
+  }
+
+  .width23 {
+    width: 35%;
   }
 }
 
