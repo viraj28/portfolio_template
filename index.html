@@ -15,23 +15,27 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-
-  <title>Portfolio</title>
+<link rel="shortcut icon" href="res/html-coding.png" />
+  <title>Akshay Narkar - Portfolio</title>
 </head>
 
 <body>
   <header class="header">
-    <a href="#" class="" id="">My Logo</a>
+    <a href="#" class="my-2" id="">  <i class="fas fa-code"></i>
+      Akshay Narkar
+  </a>
+  <div class="my-2">
     <div class="menu-btn" id="menu-btn">
       <div class="menu-btn__lines">
 
       </div>
     </div>
-    <ul class="menu-items">
-      <li><a href="#portfolio" class="menu-item">Portfolio</a></li>
-      <li><a href="#about" class="menu-item">About</a></li>
-      <li><a href="#contact" class="menu-item">Contact</a></li>
-    </ul>
+      <ul class="menu-items mb-0">
+        <li><a href="#portfolio" class="menu-item">Portfolio</a></li>
+        <li><a href="#about" class="menu-item">About</a></li>
+        <li><a href="#contact" class="menu-item">Contact</a></li>
+      </ul>
+    </div>
   </header>
   <section class="section hero-section">
     <div class="hero-col">
@@ -72,10 +76,12 @@
 
       <!-- First Card  -->
       <div class="row card-custom">
-        <div class="col-md-6 p-3">
-          <img src="/res/Portoflio Card/Snapshoot Portfolio.png" class="card-img-top">
+        <div class="col-md-6 py-3 order-sm-2 bg-secondary row px-0 mx-0" style=" border-radius: 8px;">
+          <div class="card-image-top px-3 m-auto">
+          <img src="/res/htmlcapstone.png" class="card-image-top" style="width: 100%; border-radius: 8px;"> 
+          </div>
         </div>
-        <div class="col-md-6 p-3" >
+        <div class="col-md-6 p-3 py-lg-4" >
           <div class="card-body">
             <h3 class="card-title font-weight-bold ">Tonic</h3>
             <h7 class="text-uppercase">Canopy <span class="text-muted text-capitalize">. Back end dev </span> <span class="text-muted">. 2015</span></h7>
@@ -90,11 +96,13 @@
       </div>
 
       <!-- Second Card  -->
-      <div class="row  card-custom">
-        <div class="col-md-6 p-3 order-sm-2">
-          <img src="/res/Portoflio Card/Snapshoot Portfolio-2.png" class="card-img-top">
+      <div class="row card-custom">
+         <div class="col-md-6 py-3 order-sm-2 bg-dark row px-0 mx-0" style=" border-radius: 8px;">
+          <div class="card-image-top px-3 m-auto">
+          <img src="/res/social.png" class="card-image-top" style="width: 100%; border-radius: 8px;"> 
+          </div>
         </div>
-        <div class="col-md-6 p-3">
+        <div class="col-md-6 p-3 py-lg-4">
           <div class="card-body">
             <h3 class="card-title font-weight-bold ">Multi-Post Stories</h3>
             <h7 class="text-uppercase">FACEBOOK <span class="text-muted text-capitalize">. Full Stack Dev </span> <span class="text-muted">. 2015</span></h7>
@@ -110,11 +118,13 @@
       </div>
 
       <!-- Third Card  -->
-      <div class="row  card-custom">
-        <div class="col-md-6 p-3">
-          <img src="/res/Portoflio Card/Snapshoot Portfolio-3.png" class="card-img-top">
+     <div class="row card-custom">
+         <div class="col-md-6 py-3 order-sm-2 bg-warning   row px-0 mx-0" style=" border-radius: 8px;">
+          <div class="card-image-top px-3 m-auto">
+          <img src="/res/rubycap.png" class="card-image-top" style="width: 100%; border-radius: 8px;"> 
+          </div>
         </div>
-        <div class="col-md-6 p-3">
+        <div class="col-md-6 p-3 py-lg-4">
           <div class="card-body">
             <h3 class="card-title font-weight-bold ">Facebook 360</h3>
             <h7 class="text-uppercase">FACEBOOK <span class="text-muted text-capitalize">. Full Stack Dev </span> <span class="text-muted">. 2015</span></h7>
@@ -130,11 +140,13 @@
       </div>
 
       <!-- Fourth Card  -->
-      <div class="row  card-custom">
-        <div class="col-md-6 p-3 order-sm-2">
-          <img src="/res/Portoflio Card/Snapshoot Portfolio-4.png" class="card-img-top">
+      <div class="row card-custom">
+          <div class="col-md-6 py-3 order-sm-2 bg-primary row px-0 mx-0" style=" border-radius: 8px;">
+          <div class="card-image-top px-3 m-auto">
+          <img src="/res/ronaldoprof.png" class="card-image-top" style="width: 100%; border-radius: 8px;"> 
+          </div>
         </div>
-        <div class="col-md-6 p-3">
+        <div class="col-md-6 p-3 py-lg-4">
           <div class="card-body">
             <h3 class="card-title font-weight-bold ">Uber Navigation</h3>
             <h7 class="text-uppercase">Uber <span class="text-muted text-capitalize">. Lead Developer </span> <span class="text-muted">. 2018</span></h7>
@@ -340,29 +352,29 @@
   <!-- Contact me  -->
   <section id="contact">
     <div class="container text-center text-light">
-       <div class="row" style="padding: 8rem 0;" >
+       <div class="row" style="padding-top: 8rem; padding-bottom: 4rem;" >
         <div class="col-md-6 offset-md-3" >
           <div class="card-body ">
             <h1 class="card-title font-weight-bold ">Contact Me </h1>
             
             <p class="card-text pt-4">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
 
-            <form class="py-4 ">
+            <form class="py-4" id="contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" id="name" placeholder="Alexandra Loremipsum">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Alexandra Loremipsum">
 
               </div>
               <div class="form-group">
                 
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="alexandra@gmail.com">
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="alexandra@gmail.com">
                 
               </div>
 
               <div class="from-group">
-                <textarea class="form-control" id="message" rows="7" placeholder="write message here..."></textarea>
+                <textarea class="form-control" name="message" id="message" rows="7" placeholder="write message here..."></textarea>
               </div>
 
-              <button type="submit" class="btn btn-light m-4">Get in Touch</button>
+              <button type="submit" id="submit-form" class="btn btn-light m-4">Get in Touch</button>
 
             </form>
             
@@ -375,7 +387,6 @@
 
 
 
-  <script src="js/main.js"></script>
   <!-- Bootstrap  -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -383,6 +394,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+  
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+  
 
 </body>
 
