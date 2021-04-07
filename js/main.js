@@ -58,3 +58,27 @@ $('#submit-form').on('click', function(e) {
     }
   })
 })
+
+
+// Arrows
+// const langCollapse = document.getElementById("")
+const collapseItem = document.querySelectorAll(".Collapsed");
+
+collapseItem.forEach(item => {
+  if(item.parentElement.parentElement.parentElement.parentElement.children[1].classList.contains("show")){
+    item.parentElement.parentElement.children[1].children[0].classList.add("bi-chevron-down");
+  }
+  item.addEventListener('click', () => {
+ 
+     item.parentElement.parentElement.children[1].children[0].classList.toggle("bi-chevron-down");
+     item.parentElement.parentElement.children[1].children[0].classList.toggle("bi-chevron-right");
+     
+  
+      
+
+  
+    
+  })
+  
+});
+ 
