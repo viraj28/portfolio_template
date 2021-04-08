@@ -100,7 +100,7 @@ form.addEventListener('submit', function(e){
       }
       
     })
-    alert("Thanks, I'll get back to you.")
+    alert("Thanks for reaching out! I'll get back to you at the ASAP.")
   }
   
 }, false )
