@@ -203,6 +203,7 @@ body {
 .namehover:hover {
   color: #111;
 }
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1249px) {
