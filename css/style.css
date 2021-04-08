@@ -196,7 +196,33 @@ body {
   text-decoration: underline;
 }
 
+.home-image {
+  position: absolute;
+}
+
 /* MEDIA QUERIES */
+
+@media (max-width: 1249px) {
+  .home-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1919px) {
+  .home-image {
+    width: 30%;
+    right: 0;
+    bottom: 125px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .home-image {
+    width: 25%;
+    right: 70px;
+    top: 175px;
+  }
+}
 
 @media (max-width: 1023px) {
   .hero-col {
@@ -223,6 +249,10 @@ body {
 
   .name-circle-mobile {
     display: none;
+  }
+
+  .hero-section {
+    margin-top: 60px;
   }
 }
 
